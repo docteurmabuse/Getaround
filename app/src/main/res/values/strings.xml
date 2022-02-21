@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Getaround</string>
+    <string name="owner">Owner</string>
 </resources>

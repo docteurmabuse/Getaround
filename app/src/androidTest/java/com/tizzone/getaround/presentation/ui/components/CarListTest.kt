@@ -1,11 +1,10 @@
-package com.tizzone.getaround.presentation
+package com.tizzone.getaround.presentation.ui.components
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.tizzone.getaround.data.network.MockWebServerResponse.mockCarList
-import com.tizzone.getaround.presentation.ui.components.CarList
+import com.tizzone.getaround.data.network.MockWebServerResponse.MOCK_CAR_LIST
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -16,11 +15,10 @@ class CarListTest {
     @get: Rule
     val composeTestRule = createComposeRule()
 
-    private val carsData = mockCarList
+    private val carsData = MOCK_CAR_LIST
 
     @Before
     fun setup() {
-
         composeTestRule.setContent {
             CarList(cars = carsData, onNavigateToCarDetail = {})
         }

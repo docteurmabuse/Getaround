@@ -32,7 +32,7 @@ fun CarList(
                 modifier = Modifier,
                 car = car,
                 onClick = {
-                    val route = Screen.CarDetail.route + "/${car.id}"
+                    val route = Screen.CarDetail.route + "/$index"
                     onNavigateToCarDetail(route)
                 }
             )

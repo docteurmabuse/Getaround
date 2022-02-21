@@ -6,6 +6,8 @@ import com.tizzone.getaround.domain.model.Rating
 
 const val BASE_URL = "https://raw.githubusercontent.com/drivy/jobs/master/mobile/"
 const val CARS_VIEWMODEL = "CarsViewModel"
+const val CAR_INDEX_URL = "/{carIndex}"
+const val CAR_INDEX = "carIndex"
 val FAKE_CAR = Car(
     "1",
     brand = "Citroen",

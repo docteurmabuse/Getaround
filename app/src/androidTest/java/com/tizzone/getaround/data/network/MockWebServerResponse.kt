@@ -5,9 +5,9 @@ import com.tizzone.getaround.domain.model.Owner
 import com.tizzone.getaround.domain.model.Rating
 
 object MockWebServerResponse {
-    val mockCarList = listOf(
+    val MOCK_CAR_LIST = listOf(
         Car(
-            "1",
+            id = "1",
             brand = "Citroen",
             model = "C3",
             pricePerDay = 17,
@@ -19,7 +19,7 @@ object MockWebServerResponse {
             )
         ),
         Car(
-            "2",
+            id = "2",
             brand = "Renault",
             model = "Clio",
             pricePerDay = 20,
@@ -29,6 +29,18 @@ object MockWebServerResponse {
                 pictureUrl = "https://github.com/drivy/mobile-technical-test/raw/master/api/pictures/15.jpg",
                 rating = Rating(4.69771, 259)
             )
+        )
+    )
+    val MOCK_CAR = Car(
+        id = "1",
+        brand = "Citroen",
+        model = "C3",
+        pricePerDay = 17,
+        rating = Rating(4.69771, 259),
+        owner = Owner(
+            name = "Elmira Sorrell",
+            pictureUrl = "https://github.com/drivy/mobile-technical-test/raw/master/api/pictures/13.jpg",
+            rating = Rating(4.69771, 259)
         )
     )
 }

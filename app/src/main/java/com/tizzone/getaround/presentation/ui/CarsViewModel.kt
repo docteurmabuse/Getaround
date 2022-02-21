@@ -18,6 +18,7 @@ class CarsViewModel
     private val getCars: GetCars
 ) : ViewModel() {
     val cars: MutableState<List<Car>> = mutableStateOf(ArrayList())
+    val car: MutableState<Car?> = mutableStateOf(null)
     val loading = mutableStateOf(false)
 
     init {
