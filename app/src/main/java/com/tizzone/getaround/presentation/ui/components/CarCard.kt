@@ -53,7 +53,7 @@ fun CarCard(
                 // Crop, Fit, Inside, FillHeight, FillWidth, None
                 contentScale = ContentScale.Crop,
                 modifier = modifier
-                    .height(150.dp)
+                    .height(120.dp)
                     .constrainAs(image) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
